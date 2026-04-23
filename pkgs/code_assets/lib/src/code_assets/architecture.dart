@@ -26,6 +26,10 @@ final class Architecture {
   /// The [IA-32](https://en.wikipedia.org/wiki/IA-32) architecture.
   static const Architecture ia32 = Architecture._('ia32');
 
+  /// The [MIPS](https://en.wikipedia.org/wiki/MIPS_architecture) 32-bit
+  /// architecture.
+  static const Architecture mips32 = Architecture._('mips32');
+
   /// The [RISC-V](https://en.wikipedia.org/wiki/RISC-V) 32 bit architecture.
   static const Architecture riscv32 = Architecture._('riscv32');
 
@@ -40,6 +44,7 @@ final class Architecture {
     arm,
     arm64,
     ia32,
+    mips32,
     riscv32,
     riscv64,
     x64,
@@ -60,6 +65,7 @@ final class Architecture {
     Abi.linuxArm: Architecture.arm,
     Abi.linuxArm64: Architecture.arm64,
     Abi.linuxIA32: Architecture.ia32,
+    Abi.linuxMIPS: Architecture.mips32,
     Abi.linuxRiscv32: Architecture.riscv32,
     Abi.linuxRiscv64: Architecture.riscv64,
     Abi.linuxX64: Architecture.x64,

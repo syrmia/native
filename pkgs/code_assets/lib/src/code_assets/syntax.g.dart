@@ -47,6 +47,8 @@ class ArchitectureSyntax {
 
   static const ia32 = ArchitectureSyntax._('ia32');
 
+  static const mips32 = ArchitectureSyntax._('mips32');
+
   static const riscv32 = ArchitectureSyntax._('riscv32');
 
   static const riscv64 = ArchitectureSyntax._('riscv64');
@@ -57,6 +59,7 @@ class ArchitectureSyntax {
     arm,
     arm64,
     ia32,
+    mips32,
     riscv32,
     riscv64,
     x64,
